@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavigationBar.master.cs" Inherits="KpopZtation.View.NavigationBar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Button ID="homeButton" runat="server" Text="Home" OnClick="homeButton_Click" />
+        <asp:Button ID="cartButton" runat="server" Text="Cart" style="margin-left: 10px" OnClick="cartButton_Click"/>
+        <asp:Button ID="transactionButton" runat="server" Text="Transaction" style="margin-left: 10px" OnClick="transactionButton_Click"/>
+        <asp:Button ID="updateProfileButton" runat="server" Text="Update Profile" style="margin-left: 10px" OnClick="updateProfileButton_Click"/>
+        <asp:Button ID="logoutButton" runat="server" Text="Logout" style="margin-left: 10px" OnClick="logoutButton_Click"/>
+        <asp:Button ID="loginButton" runat="server" Text="Login" style="margin-left: 10px" OnClick="loginButton_Click"/>
+        <asp:Button ID="registerButton" runat="server" Text="Register" style="margin-left: 10px" OnClick="registerButton_Click"/>
+        <asp:Button ID="viewProfileButton" runat="server" Text="View Profile" style="margin-left: 10px" OnClick="viewProfileButton_Click"/>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
